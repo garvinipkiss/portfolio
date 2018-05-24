@@ -309,17 +309,17 @@ a.accordion-toggle  i{
 /*===========================
   Services
 ============================ */
-#services {
+#projects {
 	padding:100px;
 	background:#f6f6f6;
 }
 
-#services img {
+#projects img {
 	padding-top:30px;
 	margin-bottom:30px;
 }
 
-#services h3 {
+#projects h3 {
 	margin-bottom:30px;
 }
 
