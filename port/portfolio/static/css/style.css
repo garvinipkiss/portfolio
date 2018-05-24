@@ -36,7 +36,7 @@ a {
 }
 a:hover {
 	text-decoration: none;
-	color:#eee;	
+	color:#eee;
 	}
 
 .btn {
@@ -77,7 +77,7 @@ a:hover {
 	border-color: #d9ae6a;
 	padding: 10px 20px;
 }
-	
+
 /*===========================
   Menu and Navigation
 ============================ */
@@ -89,9 +89,9 @@ a:hover {
 .navbar-brand h1 {
 	margin-top:9px;
 	padding-top:5px;
-	float: left;	
-	font-size: 25px;	
-	color:#d9ae6a;	
+	float: left;
+	font-size: 25px;
+	color:#d9ae6a;
 	text-transform:uppercase;
 	font-weight:900;
 }
@@ -100,11 +100,11 @@ a:hover {
 	font-size:12px;
 	float:right;
 	text-transform:uppercase;
-	font-weight:700;	
+	font-weight:700;
 }
 
 .menu ul.nav-tabs li {
-	color:#000;	
+	color:#000;
 }
 
 .nav-tabs {
@@ -114,17 +114,17 @@ a:hover {
 	float: left;
 	margin-bottom: 0;
 }
-.nav-tabs > li > a {	
+.nav-tabs > li > a {
 	border-radius:0;
 	color:#333;
 	padding:30px;
 }
 
-.nav-tabs > li > a:hover {	
+.nav-tabs > li > a:hover {
 	color: #d9ae6a;
 	border-color: #fff #fff #fff;
 	border-radius:0;
-	background-color:#fff; 
+	background-color:#fff;
 	transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -180,7 +180,7 @@ a:hover {
   border: 1px solid #d9ae6a;
 }
 
-#carousel-slider 
+#carousel-slider
 .carousel-control {
   width:inherit;
 }
@@ -194,7 +194,7 @@ a:hover {
 }
 
 #carousel-slider
-.carousel-control.left, 
+.carousel-control.left,
 #carousel-slider
 .carousel-control.right {
   background: none;
@@ -239,7 +239,7 @@ a:hover {
 
 .panel-default>.panel-heading,
 .panel{
-  background-color: #e6e6e6; 
+  background-color: #e6e6e6;
   border:0 none;
   box-shadow:none;
 }
@@ -311,7 +311,7 @@ a.accordion-toggle  i{
 ============================ */
 #services {
 	padding:100px;
-	background:#f6f6f6;	
+	background:#f6f6f6;
 }
 
 #services img {
@@ -339,7 +339,7 @@ a.accordion-toggle  i{
 
 #feature h3 {
 	margin-top:20px;
-	margin-bottom:20px;	
+	margin-bottom:20px;
 	font-size:18px;
 	color: #333;
 }
@@ -355,7 +355,7 @@ a.accordion-toggle  i{
 
 #contact {
 	background:#f6f6f6;
-	padding:100px;	
+	padding:100px;
 }
 
 /* --- Map --- */
@@ -377,7 +377,7 @@ a.accordion-toggle  i{
 	padding:0;
 }
 
-#contact-page .contact-form 
+#contact-page .contact-form
 .form-group label {
   color: #4E4E4E;
   font-size: 14px;
@@ -475,10 +475,10 @@ ul.sidebar-gallery {
 	border-radius: 4px;
 	background-color: #fff;
 }
- 
+
 ul.social-network {
 	list-style:none;
-	margin-top:20px;	
+	margin-top:20px;
 	padding:10px;
 	transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -492,13 +492,13 @@ ul.social-network {
 
 ul.social-network li {
 	display:inline;
-	margin: 0 50px;	
-	font-size:25px;	
+	margin: 0 50px;
+	font-size:25px;
 	margin-left:-10px;
 }
 
 ul.social-network li a {
-	color:#d0d0d0;	
+	color:#d0d0d0;
 }
 .social-network li:hover .fa-twitter {
   color: #00abf0;
@@ -510,19 +510,19 @@ ul.social-network li a {
   color: #eb8984;
 }
 .social-network li:hover .fa-pinterest {
-  color: #c9171e; 
+  color: #c9171e;
 }
 .social-network li:hover .fa-linkedin {
-  color: #0077b5; 
+  color: #0077b5;
 }
 .social-network li:hover .fa-youtube-play {
-  color: #C84941; 
+  color: #C84941;
 }
 .social-network li:hover .fa-dribbble {
-  color: #EA4C89 ; 
+  color: #EA4C89 ;
 }
 .social-network li:hover .fa-pinterest-square {
-  color: #EA4B49; 
+  color: #EA4B49;
 }
 
 .copyright {
@@ -535,4 +535,4 @@ ul.social-network li a {
 	font-weight:600;
 	font-size:12px;
 	text-shadow:none;
-} 
+}

@@ -1,3 +1,5 @@
+{% load static %}
+{% load bootstrap3 %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,11 +9,12 @@
     <title>My portfolio</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link href="css/style.css" rel="stylesheet" />
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <script src="{% static 'css/js/script.js' %}"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,13 +68,13 @@
 
 						<div class="carousel-inner">
 							<div class="item active">
-								<img src="img/3.jpg" class="img-responsive" alt="">
+								<img src="static/img/3.jpg" class="img-responsive" alt="">
 						   </div>
 						   <div class="item">
-								<img src="img/3.jpg" class="img-responsive" alt="">
+								<img src="static/img/3.jpg" class="img-responsive" alt="">
 						   </div>
 						   <div class="item">
-								<img src="img/3.jpg" class="img-responsive" alt="">
+								<img src="static/img/3.jpg" class="img-responsive" alt="">
 						   </div>
 						</div>
 
@@ -91,14 +94,144 @@
 	<section id="about">
 		<div class="container">
 			<div class="center">
-				<div class="col-md-6 col-md-offset-3">
-					<h2>About Us</h2>
-					<hr>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
-				</div>
+
 			</div>
 		</div>
+<style>
+.webmadewell {
+  font-family: "montserrat", san-serif;
+  background-color: AliceBlue;
+}
+body {
+  margin: 0;
+  font-size: 0.875em;
+  color: DimGray;
+}
+div {
+  box-sizing: border-box;
+}
+button {
+  font-size: 1em;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  outline: none;
+}
+button::before {
+  content: "More ";
+}
+.page-about {
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  min-width: 600px;
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: white;
+  box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.left-side {
+  position: absolute;
+  width: 50%;
+  padding: 40px;
+}
+.profile-photo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-image: url("http://webmadewell.com/wp-content/uploads/2018/02/img-bg-about.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.right-side-info {
+  position: relative;
+  padding: 40px;
+  width: 50%;
+  margin-left: 100%;
+  color: white;
+  background-color: DimGray;
+}
+.show-info .left-side {
+  padding-top: 220px;
+}
+.show-info button {
+  background-color: MediumTurquoise;
+}
+.show-info button::before {
+  content: "Less ";
+}
+.show-info .right-side-info {
+  margin-left: 50%;
+}
+.left-side,
+.right-side-info,
+button {
+  transition: all 0.5s ease-in-out;
+}
+.profile-photo {
+  animation: right_frame 1s ease-in-out 1 forwards;
+}
+.show-info .profile-photo {
+  animation: left_frame 1s ease-in-out 1 forwards;
+}
+@keyframes right_frame {
+  0% {
+    top: 40px;
+    left: 40px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+  }
+  50% {
+    top: 40px;
+    left: 50%;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+  }
+  100% {
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+@keyframes left_frame {
+  0% {
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    border-radius: 0;
+  }
+  50% {
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 0;
+  }
+  100% {
+    top: 40px;
+    left: 40px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+  }
+}
 
+</style>
+<script>
+  $('.trigger').click(function() {
+  $(this).parents('.page-about').toggleClass('show-info');
+});
+</script>
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -141,7 +274,7 @@
                               <div class="panel-body">
                                   <div class="media accordion-inner">
                                         <div class="pull-left">
-                                            <img class="img-responsive" src="img/accordion1.png">
+                                            <img class="img-responsive" src="static/img/accordion1.png">
                                         </div>
                                         <div class="media-body">
                                              <h4>Adipisicing elit</h4>
@@ -235,24 +368,24 @@
 		<div class="container">
 			<div class="text-center">
 				<div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-					<img src="img/services/services1.png">
-					<h3>Fully Responsive</h3>
+					<img src="static/img/services/services1.png">
+					 <a href="https://garvinipkiss.github.io/Dice-game/"><li class="flex-item">Quotes</li></a>
 					<p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
 				</div>
 				<div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-					<img src="img/services/services5.png">
-					<h3>Retina Ready</h3>
-					<p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+					<img src="static/img/services/services5.png">
+					 <a href="https://awesomeness1.herokuapp.com/"><li class="flex-item">My gallery</li></a>
+					<p> This is an app that allows users to view photos and details about them.</p>
 				</div>
 				<div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-					<img src="img/services/services6.png">
-					<h3>Fresh and Clean</h3>
+					<img src="static/img/services/services6.png">
+					<a href="https://garvinipkiss.github.io/Dice-game/"><li class="flex-item">Instagram</li></a>
 					<p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
 				</div>
 				<div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
-					<img src="img/services/services1.png">
-					<h3>Easy to Customize</h3>
-					<p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+					<img src="static/img/services/services1.png">
+					 <a href="https://garvinipkiss.github.io/Dice-game/"><li class="flex-item">Github Name search</li></a>
+					<p>This app is able to search and bring results of dev names,their repositoties and also shows their followers and who they follow in Github.</p>
 				</div>
 			</div>
 		</div>
@@ -263,23 +396,23 @@
 			<div class="text-center">
 				<div class="col-md-4">
 					<div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" >
-						<i class="fa fa-book"></i>
-						<h3>Multi Purpose</h3>
-						<p>Quisque eu ante at tortor imperdiet gravida nec sed turpis phasellus.</p>
+						<img src="static/img/angular.svg" class="img-fluid m-1" style="max-width: 100%;  height: auto; ">
+						<h3>Angular</h3>
+						<p>Angular is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges. Angular empowers developers to build applications that live on the web, mobile, or the desktop.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" >
-						<i class="fa fa-heart-o"></i>
-						<h3>Quick Support</h3>
-						<p>Quisque eu ante at tortor imperdiet gravida nec sed turpis phasellus.</p>
+						<img src="static/img/flask.png" class="img-fluid m-1" style="max-width: 100%;  height: auto; ">
+						<h3>Flask</h3>
+						<p>Flask is a micro web framework written in Python and based on the Werkzeug toolkit and Jinja2 template engine.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" >
-						<i class="fa fa-cloud"></i>
-						<h3>Friendly Code</h3>
-						<p>Quisque eu ante at tortor imperdiet gravida nec sed turpis phasellus.</p>
+						<img src="static/img/django.png"class="img-fluid m-1" style="max-width: 100%;  height: auto; ">
+						<h3>Django</h3>
+						<p>Django is a free and open-source web framework, written in Python, which follows the model-view-template architectural pattern.</p>
 					</div>
 				</div>
 			</div>
@@ -349,12 +482,12 @@
 				<div class="text-center">
 					<h4>Photo Gallery</h4>
 					<ul class="sidebar-gallery">
-						<li><a href="#"><img src="img/gallery1.png" alt="" /></a></li>
-						<li><a href="#"><img src="img/gallery2.png" alt="" /></a></li>
-						<li><a href="#"><img src="img/gallery3.png" alt="" /></a></li>
-						<li><a href="#"><img src="img/gallery4.png" alt="" /></a></li>
-						<li><a href="#"><img src="img/gallery5.png" alt="" /></a></li>
-						<li><a href="#"><img src="img/gallery6.png" alt="" /></a></li>
+						<li><a href="#"><img src="static/img/gallery1.png" alt="" /></a></li>
+						<li><a href="#"><img src="static/img/gallery2.png" alt="" /></a></li>
+						<li><a href="#"><img src="static/img/gallery3.png" alt="" /></a></li>
+						<li><a href="#"><img src="static/img/gallery4.png" alt="" /></a></li>
+						<li><a href="#"><img src="static/img/gallery5.png" alt="" /></a></li>
+						<li><a href="#"><img src="static/img/gallery6.png" alt="" /></a></li>
 					</ul>
 				</div>
 			</div>
