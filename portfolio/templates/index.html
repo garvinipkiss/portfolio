@@ -17,6 +17,9 @@
   <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
   <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link media="screen,projection,tv" href="style.css" rel="stylesheet" type="text/css" />
+<link media="only screen and (min-width:250px) and (max-width:500px)" href="responsive-mobile.css" rel="stylesheet" type="text/css" />
+<link media="print" href="print.css" rel="stylesheet" type="text/css" />
   <script src="{% static 'js/script.js' %}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -70,8 +73,9 @@
 }
 body {
   margin: 0;
-  font-size: 0.875em;
+  font-size: 0.995em;
   color: DimGray;
+  body-position:center;
 }
 div {
   box-sizing: border-box;
@@ -193,8 +197,9 @@ button {
 }
 
 </style>
-        <div class="container">
 
+        <div class="container">
+<div style="width:70%;" class="container">
            <div class="col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
              <div class="page-about">
              <div class="left-side">
@@ -227,7 +232,11 @@ button {
     color: #d9ae6a;
   }
 </style>
-    <div id="projects">
+<div id="projects">
+  <div class="container">
+    <center><h1>PROJECTS<h1></center>
+     <div class=id="myCarousel">
+    <div style="width:70%;" class="container">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -256,19 +265,14 @@ button {
 
     <div class="item">
       <img src="static/img/Quotes.jpg" alt="Quotes">
+        <a href="https://garvinipkiss.github.io/Quotes/">
       <div class="carousel-caption">
         <h4>Quotes</h4>
         <p>This web app is able to add,read, save and delete quotes indicating their dates</p>
       </div>
     </div>
 
-  <div class="item">
-    <img src="static/img/passwordlocker.png" alt="passwordlocker">
-    <div class="carousel-caption">
-      <h4>Passwordlocker</h4>
-      <p>This app is able to search and bring results of dev names,their repositoties and also shows their followers and who they follow in Github.</p>
-    </div>
-  </div>
+
   </div>
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -280,6 +284,7 @@ button {
     <span class="sr-only">Next</span>
   </a>
 </div>
+</div>
 <style>
 li {
 color: black;
@@ -288,19 +293,19 @@ font-size:15px;
 </style>
 			<div class="text-center">
 				<div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <a href="https://garvinipkiss.github.io/Quotes/"><li class="flex-item">Quotes</li>
+          <a href="https://garvinipkiss.github.io/Quotes/"target="_blank"><li class="flex-item">Quotes</li>
 					<img src="static/img/projects/Quotes.jpg"  alt="Quotes" style="width:60px;height:60px;"></a>
 				</div>
 				<div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-          <a href="https://awesomeness1.herokuapp.com/"><li class="flex-item">My gallery</li>
+          <a href="https://awesomeness1.herokuapp.com/"target="_blank"><li class="flex-item">My gallery</li>
 					<img src="static/img/projects/gallery.png"  alt="gallery" style="width:60px;height:60px;"></a>
 				</div>
 				<div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-          <a href="https://og-insta.herokuapp.com/"><li class="flex-item">Instagram</li>
+          <a href="https://og-insta.herokuapp.com/"target="_blank"><li class="flex-item">Instagram</li>
 					<img src="static/img/projects/insta.png" alt="Instagram" style="width:60px;height:60px;"></a>
 				</div>
 				<div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
-           <a href="https://garvinipkiss.github.io/Github-name-search/"><li class="flex-item">Github Name search</li>
+           <a href="https://garvinipkiss.github.io/Github-name-search/" target="_blank"><li class="flex-item">Github Name search</li>
 					<img src="static/img/projects/githubnamesearch.jpg"  alt="githubnamesearch" style="width:60px;height:60px;"></a>
 				</div>
 			</div>
@@ -309,6 +314,7 @@ font-size:15px;
     <hr>
 
 	<div id="feature">
+    <center><h1>skills<h1></center>
 		<div class="container">
 			<div class="text-center">
 				<div class="col-md-4">
@@ -363,6 +369,7 @@ font-size:15px;
 			<div class="col-lg-8">
 			</div>
 			<section id="contact-page">
+          <div style="width:70%;" class="container">
 				<div class="container">
 					<div class="center">
 						<h1>Drop Your Message</h1>
@@ -389,9 +396,9 @@ font-size:15px;
 		<div class="container">
 			<div class="social-icon">
 				<div class="col-md-4">
-          <a href="https://mail.google.com" class="fa fa-google"></a>
-          <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
-          <a href="https://github.com/garvinipkiss" class="fa fa-github"></a>
+          <a href="https://mail.google.com" class="fa fa-google fa-4x"></a>
+          <a href="https://www.linkedin.com" class="fa fa-linkedin fa-4x"></a>
+          <a href="https://github.com/garvinipkiss" class="fa fa-github fa-4x"></a>
 				</div>
 			</div>
 
@@ -408,10 +415,28 @@ font-size:15px;
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="{% static 'js/jquery.js' %}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
 	<script src="{% static 'js/wow.min.js' %}"></script>
 	<script src="{% static 'js/jquery.easing.min.js' %}"></script>
 	<script src="{% static 'js/jquery.isotope.min.js' %}"></script>
 	<script src="{% static 'js/functions.js' %}"></script>
+  <style>
+  	/* Small devices (tablets, 768px and up) */
+  	@media (min-width:768px @screen-sm-min) {  }
+
+  	/* Medium devices (desktops, 992px and up) */
+  	@media (min-width:992px @screen-md-min) { }
+
+  	/* Large devices (large desktops, 1200px and up) */
+  	@media (min-width:1200px @screen-lg-min) { }
+
+  	/* landscape phones and smaller */
+    @media screen and (max-width: 1080px) {
+        #hero .user-actions {
+           float: left;
+           width: auto;
+        }
+    }
+</style>
   </body>
 </html>

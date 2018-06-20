@@ -295,7 +295,10 @@ textarea#message{
   resize: none;
   padding: 10px;
 }
-
+.col-centered{
+   float: none;
+   margin: 0 auto;
+}
 .center h3{
   margin-top: 0;
   margin-bottom: 20px;
@@ -376,7 +379,8 @@ footer h4 {
 	color:#000;
 	text-transform:uppercase;
 	font-weight:600;
-	font-size:12px;
+
+	font-size:14px;
 	text-shadow:none;
 }
 
@@ -385,6 +389,7 @@ footer h4 {
   font-size: 30px;
   width: 50px;
 	}
+
 	/* Small devices (tablets, 768px and up) */
 	@media (min-width:768px @screen-sm-min) {  }
 
