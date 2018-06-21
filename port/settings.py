@@ -32,7 +32,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'portfolio.apps.portfolio.Config'
+    'portfolio',
     'tinymce',
     'bootstrap3',
     'django.contrib.admin',
