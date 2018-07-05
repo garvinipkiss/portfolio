@@ -44,8 +44,8 @@
 						<div class="menu">
 							<ul class="nav nav-tabs" role="tablist">
 								<li role="presentation"><a href="#home" class="active">Home</a></li>
-								<li role="presentation"><a href="#about">About Me</a></li>
 								<li role="presentation"><a href="#Projects">Projects</a></li>
+                <li role="presentation"><a href="#skills">skills</a></li>
 								<li role="presentation"><a href="#contact">Contact</a></li>
 							</ul>
 						</div>
@@ -108,7 +108,7 @@ button::before {
   left: 50%;
   width: 50%;
   height: 100%;
-  background-image: url("http://webmadewell.com/wp-content/uploads/2018/02/img-bg-about.jpg");
+  background-image: url("static/img/garv.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -205,10 +205,11 @@ button {
              </div>
              <div class="right-side-info">
 
-               <p>I am a Moringa Certified Professional Web Developer student,  I have been working with responsive design integration, and have experimented with several responsive techniques and tools.</p>
+               <p>I am a Moringa Certified Professional Software Developer,I have been working with responsive design integration, and have experimented with several responsive techniques and tools.</p>
 
                  <h3>I believe:</h3>
                  1. The user interface should drive design decisions because it's what customers actually use. Start with the user experience, then move your way backward through the technology stack.
+
                  2. Software engineering exists to support the customer experience — whether it's creating a web application, designing a web service API, or architecting a scalable infrastructure. If software engineers aren't thinking about the customer every step of the way, they're Doing It Wrong.
 
                  3. If it's not in the best interests of your customers, it's not in the best interests of your business. The best way to engage your customers is to be transparent, honest, and genuine.</p>
@@ -357,14 +358,10 @@ button {
 	<div id="contact">
 		<div class="container">
       <section id="contact-page">
-  				<div class="container">
+  				<div style="width:73%;"class="container">
   					<div class="center">
   						<h3>Drop Your Message</h3>
   						<p>Here</p>
-  					</div>
-  					<div class="col-lg-4">
-  						<div class="row contact-wrap">
-  							<div class="status alert alert-success" style="display: none"></div>
                 <form action="https://formspree.io/garvinipkiss@gmail.com"
                       method="POST">
                     <input type="text" name="name">
@@ -372,31 +369,48 @@ button {
                     <textarea name="message"></textarea>
                     <input type="submit" value="Send">
                 </form>
-  						</div><!--/.row-->
   					</div>
-  				</div><!--/.container-->
+          </div>
+  			</div><!--/.container-->
   			</section><!--/#contact-page-->
   		</div>
   	</div>
+    <!-- Start of Async Drift Code -->
+<script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('r6g2cpv4ruc3');
+</script>
+<!-- End of Async Drift Code -->
 	<div class="sub-footer">
 		<div class="container">
 			<div class="social-icon">
-				<div class="col-md-4">
-					<ul class="social-network">
-						<li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-					</ul>
+						<center><li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li></center>
+						<center><li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li></center>
 				</div>
 			</div>
-
-			<div class="col-md-4 col-md-offset-4">
-				<div class="copyright">
-					&copy;  All Rights Reserved | <a href="https://github.com/garvinipkiss/"></a> by Garvin Ogolla
-
 				</div>
-			</div>
-		</div>
-	</div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

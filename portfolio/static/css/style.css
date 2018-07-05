@@ -404,11 +404,14 @@ textarea#message{
 /*===========================
   Footer
 ============================ */
-footer {
+footer li {
 	padding:50px;
 	background:#dab273;
+	display: inline;
 }
-
+#inline {
+  display: inline-block;
+}
 footer h4 {
 	margin-bottom:30px;
 	text-transform:uppercase;
@@ -485,9 +488,10 @@ ul.social-network {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-.sub-footer  {
+.sub-footer li {
 	background:#d9ae6a;
 	padding:30px;
+	display: inline;
 }
 
 ul.social-network li {
@@ -497,15 +501,6 @@ ul.social-network li {
 	margin-left:-10px;
 }
 
-ul.social-network li a {
-	color:#d0d0d0;
-}
-.social-network li:hover .fa-twitter {
-  color: #00abf0;
-}
-.social-network li:hover .fa-facebook {
-  color: #39579a;
-}
 .social-network li:hover .fa-google-plus {
   color: #eb8984;
 }
@@ -514,15 +509,6 @@ ul.social-network li a {
 }
 .social-network li:hover .fa-linkedin {
   color: #0077b5;
-}
-.social-network li:hover .fa-youtube-play {
-  color: #C84941;
-}
-.social-network li:hover .fa-dribbble {
-  color: #EA4C89 ;
-}
-.social-network li:hover .fa-pinterest-square {
-  color: #EA4B49;
 }
 
 .copyright {
