@@ -327,11 +327,11 @@ a.accordion-toggle  i{
 	padding:80px;
 }
 
-#feature i {
+#feature li {
 	font-size:40px;
 	margin-top:70px;
 	margin-bottom:30px;
-	color:#fff;
+	color:black;
 	padding:50px;
 	background:#d9ae6a;
 	border-radius:50%;
@@ -345,7 +345,7 @@ a.accordion-toggle  i{
 }
 
 .hi-icon-effect i.fa:hover {
-	background:#fff;
+	background:black;
 	color: #d9ae6a;
 	-webkit-transition: color 300ms, background-color 300ms;
   -moz-transition: color 300ms, background-color 300ms;
